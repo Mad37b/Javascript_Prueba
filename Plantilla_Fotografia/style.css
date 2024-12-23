@@ -1,0 +1,96 @@
+
+
+/** Colores Principales base : Escala de grises calidos **/
+
+/** Galeria 1 **/
+
+.Contenedor-Galeria{display: flex; justify-content: space-between;align-items: center;width: 100%; background-color: grey;}
+
+.flecha_Izquierda{width: 100%; transform: rotate(180deg);}
+.boton_Izquierda1{background-color:white; width: 20%; border: white;}
+.boton_Izquierda1:hover{cursor: pointer; opacity: 0.8; }
+.flecha_Derecha{width: 100%; }
+.boton_Derecha1{background-color:transparent; width:  20%; border: transparent;}
+.boton_Derecha1:hover{cursor: pointer; opacity: 0.8; transform: scale(0.4);}
+
+/** Seccion **/
+.galeria1{ width: 100%;  display: flex; justify-content: space-around;}
+
+.galeria1 img{width: 200px; border-radius: 10px;}
+
+/** Galeria 2 **/
+
+
+
+/** Contenedor **/
+
+/** botones **/
+
+.Botones { }
+
+/** Slider **/
+.Contenedor-Galeria .slider{overflow: hidden; scroll-behavior: smooth;}
+.Contenedor-Galeria .slider img{ margin: 3px;}
+
+.slider{background-color: grey; display: flex; justify-content: space-around;}
+
+
+.Contenedor-Galeria button{cursor: pointer;}
+.Contenedor-Galeria .Botones{position: absolute;}
+
+.flecha_prev{width: 100%; transform: rotate(180deg);}
+.flecha_next{width: 100%;}
+
+
+/** bottom **/
+.prev{background-color:transparent; width:  100%; border: transparent;}
+.next{background-color:transparent; width:  100%; border: transparent;}
+/** img **/
+/** Todas las imagenes que esten en el slider tendrán un width 100 y un border radius **/
+.slider img {width: 100%; border-radius: 12px;}
+
+/** Tarjetas Giratorias **/
+
+.container-Card{display: flex; margin: 0 auto; align-content: center; justify-content: center;}
+/** Si la posicion del padre es relativa , todo el contenido de los hijos podrá meterse dentro si la posicion es absoluta**/
+.card{ position: relative; display: flex; justify-content: center; border-radius: 20px; color: green; width: 400px; height: 450px ; margin : 10px; align-items: center;}
+
+/** Contenido de la tarjeta **/
+.card .face{ position: absolute; width: 100%; height: 100%; backface-visibility: hidden;transition: .5s;overflow: hidden; border-radius: 10px; margin :5px}
+/** Contenido de la cara frontal **/
+.card .front{ box-shadow:  0 5px 10px #000; transform: perspective(600px); cursor: pointer;}
+
+
+.card .front img{position: absolute; width: 100%; height: 100%; object-fit: cover;}
+.card .front h3{position: absolute; width: 100%; height: 45px; color: white; background: #ffffff; text-align: center;line-height: 45px; top: 0;}
+
+.card .back{transform: perspective(600px) rotateY(180deg);background: rgb(9, 9, 194); color: whitesmoke;display: flex;flex-direction: column;justify-content: space-around;text-align: center;}
+
+.back{}
+
+.card:hover .front{transform:perspective(600px) rotateY(180deg) ;}
+.card:hover .back{transform:perspective(600px) rotateY(0deg) ;}
+
+.link{list-style-type: none;}
+
+/****/ 
+/**todo lo que este dentro del padre Contenedor-Galeria2 se oculta**/ 
+.Contenedor-Galeria2{background-color:gray ; width: 700px; height: 450px; overflow: hidden;  }
+
+.slider2{transition:transform 0.5s ease relative; display: flex; justify-content:flex-start; width: 1300px; margin:auto;border: 2px solid black;}
+
+.sliderSeccion{position: absolute; display: flex; top: 0; left: 0; height: 100%;}
+
+.slider2 img{  border-radius: 10px; }
+
+
+/** ul **/
+
+
+.navSlider{position: absolute;top: 390px; color: #ffffff;border-radius: 60px;display:flex;width: 100px;}
+
+.navSlider li{border-radius: 60px; width: 10px; height: 10px; list-style: none; background-color: rgb(255, 255, 255); margin: 0 auto;}
+
+/** Active **/
+
+.navSlider .active{border-radius: 60px; width: 40px; height: 10px; list-style: none; background-color: rgb(255, 255, 255); margin: 0 auto;}

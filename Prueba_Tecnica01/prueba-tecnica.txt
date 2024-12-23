@@ -1,0 +1,28 @@
+<!-- Prueba técnica 1 de afor
+
+Meteorogia 
+
+Crea una aplicacion web que permite al usuario ingresar una ubicacion y obtener el clima actual de esta area utilizando
+la api de OpenweatherMap. La prueba se realiza con HTML ,js y css 
+
+Requisitos
+
+Interfaz de Usuarios: 
+
+Un campo de entrada para que los usuarios ingresen el nombre de la ciudad,
+Un boton para enviar la consulta
+Un area para mostrar los  resultados del clima ( Temperatura condiciones meteorologicas ,humedad, etc )
+
+Manejo de errores para situaciones como no encontradas 
+
+
+Api del clima : 
+
+Utiliza la api de OpenWeatherMap https://openweathermap.org/api para obtener los datos meteorológicos
+
+Necesitaras registrarte para obtener la clave de la api 
+
+Funciones : 
+
+Hacer una llamada a la api al enviar el formulario 
+Procesar la respuesta  y mostrar los datos en la interfaz-->
